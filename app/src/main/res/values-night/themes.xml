@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EtherWallet" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorPrimary">@color/textLightColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+    </style>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/NewAccountFragment">
+
+    <fragment
+        android:id="@+id/NewAccountFragment"
+        android:name="com.samfonsec.etherwallet.ui.newAccount.NewAccountFragment"
+        android:label=""
+        tools:layout="@layout/fragment_new_account">
+
+        <action
+            android:id="@+id/to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/FeedbackFragment"
+        android:name="com.samfonsec.etherwallet.ui.feedback.FeedbackFragment"
+        android:label="@string/response_label"
+        tools:layout="@layout/fragment_feedback">
+        <argument
+            android:name="message"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/to_NewAccountFragment"
+            app:destination="@id/NewAccountFragment" />
+    </fragment>
+</navigation>

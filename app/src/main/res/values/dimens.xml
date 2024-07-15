@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="small_dimen">8dp</dimen>
+    <dimen name="default_dimen">16dp</dimen>
+    <dimen name="medium_dimen">24dp</dimen>
+    <dimen name="big_dimen">32dp</dimen>
+
+    <dimen name="action_button_padding">48dp</dimen>
+    <dimen name="title_text_size">16sp</dimen>
+</resources>
