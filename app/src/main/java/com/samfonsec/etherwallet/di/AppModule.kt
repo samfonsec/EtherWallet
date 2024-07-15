@@ -34,13 +34,8 @@ val appModule = module {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    fun provideEncryptedSharedPreferences(context: Context) = EncryptedSharedPreferences.create(
-        SAFE_PREFERENCES,
-        MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC),
-        context,
-        PrefKeyEncryptionScheme.AES256_SIV,
-        PrefValueEncryptionScheme.AES256_GCM
-    )
+    fun provideEncryptedSharedPreferences(context: Context) = 
+        context.getSharedPreferences(SAFE_PREFERENCES, Context.MODE_PRIVATE)
 
     single { provideHttpClient() }
     single { provideRetrofit(get()) }
