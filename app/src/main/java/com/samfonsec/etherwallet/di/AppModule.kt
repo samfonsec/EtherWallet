@@ -1,10 +1,6 @@
 package com.samfonsec.etherwallet.di
 
 import android.content.Context
-import androidx.security.crypto.EncryptedSharedPreferences
-import androidx.security.crypto.EncryptedSharedPreferences.PrefKeyEncryptionScheme
-import androidx.security.crypto.EncryptedSharedPreferences.PrefValueEncryptionScheme
-import androidx.security.crypto.MasterKeys
 import com.samfonsec.etherwallet.data.api.AccountApi
 import com.samfonsec.etherwallet.data.repository.AccountRepository
 import com.samfonsec.etherwallet.data.repository.NewAccountRepository
